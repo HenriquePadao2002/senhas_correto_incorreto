@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br>")
+	}
+
+	function mostra(frase) {
+		document.write(frase)
+		pulaLinha()
+	}
+	function sorteio(n) {
+		return Math.round(Math.random() * n);
+	} 
+	var numeroPensado = sorteio(10)
+	var chute = parseInt(prompt("Ja pensei, qual é o numero?"));
+
+	if (chute == numeroPensado) {
+		mostra("Voce acertou! eu pensei no " + numeroPensado)
+	} else {
+		mostra("voce errou! eu pensei no numero " + numeroPensado)
+	}
+	
+</script>
